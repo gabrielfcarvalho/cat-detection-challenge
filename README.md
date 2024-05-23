@@ -1,22 +1,26 @@
-# Cat Detection Challenge
+# Cat Detection with Computer Vision - MA.IA Solutions
 
-This repository contains the code and resources for the Cat Detection Challenge. The goal of this challenge is to develop a model capable of detecting cats in images.
+This repository contains the code and resources for the Cat Detection Challenge using the YOLOv8 object detection architecture.
+
+## Introduction
+
+The goal of this project is to identify and locate cats in images using YOLOv8. The process includes data preprocessing, model training, validation, and inference.
 
 ## Repository Structure
 
-- `notebooks/`: Jupyter notebooks used for data exploration, model training, and inference.
-- `data/`: Directory to store the dataset.
-- `models/`: Directory to store the trained models.
-- `src/`: Source code for data preprocessing, model training, and inference.
-- `images/`: Sample images and results.
+- `Desafio_Gabriel_Fernandes_Carvalho.ipynb`: Main notebook containing the full workflow.
+- `cats_dataset/`
+  - `features/`: Extracted features from images.
+  - `imgs/`: Images for training.
+  - `inference_imgs/`: Images for inference.
+  - `labels/`: Image annotations.
 
-## Getting Started
+## Environment Setup
 
 ### Prerequisites
 
 - Python 3.7 or higher
 - Jupyter Notebook
-- Required Python packages listed in `requirements.txt`
 
 ### Installation
 
@@ -28,38 +32,19 @@ This repository contains the code and resources for the Cat Detection Challenge.
 
 2. Install the required packages:
     ```bash
-    pip install -r requirements.txt
+    pip install ultralytics
+    pip install -U ipywidgets
     ```
 
-### Usage
+## Usage
 
-1. **Data Preprocessing**:
-    ```bash
-    python src/data_preprocessing.py
-    ```
+1. **Run the Notebook**:
+   - Open and run the `Desafio_Gabriel_Fernandes_Carvalho.ipynb` notebook.
 
-2. **Model Training**:
-    ```bash
-    python src/model_training.py
-    ```
+2. **Inference with New Images**:
+    - Place the images in the `cats_dataset/inference_imgs/` folder.
+    - Execute the inference section in the notebook to see the results.
 
-3. **Model Inference**:
-    ```bash
-    python src/model_inference.py
-    ```
+## Results
 
-### Notebook
-
-The main notebook `Desafio_Gabriel_Fernandes_Carvalho.ipynb` contains the full workflow of data exploration, model training, and inference.
-
-### Results
-
-The `images/` directory contains sample images and the results of the cat detection model.
-
-## Contributing
-
-Contributions are welcome! Please read the [CONTRIBUTING.md](CONTRIBUTING.md) for details on the code of conduct and the process for submitting pull requests.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+The detection results are saved in the `images/` folder and include visual examples of bounding boxes around the detected cats.
