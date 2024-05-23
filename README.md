@@ -1,4 +1,4 @@
-# Cat Detection with Computer Vision - MA.IA Solutions
+# Cat Detection with Computer Vision
 
 This repository contains the code and resources for the Cat Detection Challenge using the YOLOv8 object detection architecture.
 
