@@ -47,4 +47,4 @@ The goal of this project is to identify and locate cats in images using YOLOv8. 
 
 ## Results
 
-The detection results are saved in the `images/` folder and include visual examples of bounding boxes around the detected cats.
+The detection results include visual examples of bounding boxes around the detected cats.
